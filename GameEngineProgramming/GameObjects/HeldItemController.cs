@@ -20,21 +20,16 @@ namespace GameEngineProgramming.GameObjects
     {
         MazePlayer Player;
         AnimationPlayer AnimatedPlayer;
-        int BoneToAttach = 14;
-        public HeldItemController(string id, MazePlayer player)
+        int BoneToAttach = 18;
+        public bool Active;
+        public HeldItemController(string id, MazePlayer player, bool active)
            : base(id)
         {
             Player = player;
+            Active = active;
         }
-
-        public override void Update()
+        public override void Initialize()
         {
-
-            //Manager.Owner.AABB = new BoundingBox(
-            //    new Vector3(Manager.Owner.Location.X - 1f, Manager.Owner.Location.Y - 1, Manager.Owner.Location.Z - 1f),
-            //    new Vector3(Manager.Owner.Location.X - 1f, Manager.Owner.Location.Y - 1, Manager.Owner.Location.Z - 1f)
-            //    + new Vector3(2, 2, 2));
-
             if (Player.Manager.HasComponent<SkinnedEffectModel>())
             {
                 AnimatedPlayer = (Player.Manager.GetComponent(typeof(SkinnedEffectModel)) as SkinnedEffectModel).Player;
@@ -43,29 +38,32 @@ namespace GameEngineProgramming.GameObjects
             {
                 Destroy();
             }
-            if (InputEngine.IsMouseRightClick())
-                BoneToAttach++;
-            if (BoneToAttach > AnimatedPlayer.worldTransforms.Count() - 1)
-                BoneToAttach = 0;
+            base.Initialize();
+        }
+        public override void Update()
+        {
 
-
-            //Manager.Owner.World = Matrix.CreateTranslation(0, 0, 0);
-
-
-            //Manager.Owner.World *= Matrix.CreateRotationX(AnimatedPlayer.worldTransforms[BoneToAttach].Rotation.X);
-            //Manager.Owner.World *= Matrix.CreateRotationY(AnimatedPlayer.worldTransforms[BoneToAttach].Rotation.Y);
-            //Manager.Owner.World *= Matrix.CreateRotationZ(AnimatedPlayer.worldTransforms[BoneToAttach].Rotation.Z);
-
-            //Manager.Owner.World *= Matrix.CreateTranslation(AnimatedPlayer.worldTransforms[BoneToAttach].Translation);
-
-
-            Manager.Owner.World = AnimatedPlayer.worldTransforms[BoneToAttach];
-
-
-            if (InputEngine.IsKeyPressed(Keys.M))
+            if(ID == Player.Weapon)
             {
-                Vector3 lol = Manager.Owner.Scale;
+                Manager.Owner.World = AnimatedPlayer.worldTransforms[BoneToAttach];
+                Manager.Owner.Invisible = false;
             }
+            else
+            {
+                Manager.Owner.Invisible = true;
+            }
+            //if (InputEngine.IsMouseRightClick())
+            //    BoneToAttach++;
+            //if (BoneToAttach > AnimatedPlayer.worldTransforms.Count() - 1)
+            //    BoneToAttach = 0;
+
+
+
+
+            //if (InputEngine.IsKeyPressed(Keys.M))
+            //{
+            //    Vector3 lol = Manager.Owner.Scale;
+            //}
             base.Update();
         }
     }

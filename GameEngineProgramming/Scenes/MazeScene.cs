@@ -36,7 +36,7 @@ namespace GameEngineProgramming.Scenes
         MiniMap miniMap;
         Texture2D MiniMapRevealed;
         Random rnd = new Random();
-        Axe PlayersAxe;
+        //Axe PlayersAxe;
         public MazeScene(string id, GameEngine engine) : base(id, engine) { }
 
         #region CreateMazeBase
@@ -197,8 +197,8 @@ namespace GameEngineProgramming.Scenes
             player = new MazePlayer("player0", new Vector3(0, 0, 0), "Test", "Take 001",new Vector3(0, 0, 1), FloorTiles);
 
             AddObject(player);
-            PlayersAxe = new Axe("axe", new Vector3(0, 0, 0), "Axe", player);
-            AddObject(PlayersAxe);
+            //PlayersAxe = new Axe("axe", new Vector3(0, 0, 0), "Sword", player);
+            //AddObject(PlayersAxe);
             base.Initialize();
             Engine.Cameras.AddCamera((CameraComponent)player.Manager.GetComponent("cam"));
         }

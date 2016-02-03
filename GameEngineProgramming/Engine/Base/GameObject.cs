@@ -28,7 +28,7 @@ namespace Engine
         public Vector3 Location { get { return World.Translation; } }
         public Vector3 Scale { get { return World.Scale; } }
         public Quaternion Rotation { get { return World.Rotation; } }
-
+        public string Weapon = "Sword";
         public GameObject()
         {
             Manager = new ComponentManager(this);
@@ -67,7 +67,8 @@ namespace Engine
 
         public void Draw(CameraComponent camera)
         {
-            Manager.Draw(camera);
+            if(Invisible != true)
+                Manager.Draw(camera);
         }
 
         public void Destroy()

@@ -84,6 +84,7 @@
     <Compile Include="MazeObjects\HorizWall.cs" />
     <Compile Include="MazeObjects\MiniMap.cs" />
     <Compile Include="MazeObjects\Pillar.cs" />
+    <Compile Include="MazeObjects\Sword.cs" />
     <Compile Include="MazeObjects\VertWall.cs" />
     <Compile Include="MazeObjects\Wall.cs" />
     <Compile Include="Scenes\MazeScene.cs" />

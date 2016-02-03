@@ -42,9 +42,9 @@ namespace Engine.Components.Cameras
             CameraDirection = Manager.Owner.Direction;
 
             Vector3 CameraPosition = new Vector3(
-                Manager.Owner.Location.X - (CameraDirection.X * 8.5f),
-                Manager.Owner.Location.Y - .5f  - (CameraDirection.Y * 2),
-                Manager.Owner.Location.Z - (CameraDirection.Z * 8.5f));
+                Manager.Owner.Location.X - (CameraDirection.X * 5.5f),
+                Manager.Owner.Location.Y + .5f  - (CameraDirection.Y * 2),
+                Manager.Owner.Location.Z - (CameraDirection.Z * 5.5f));
 
             CurrentTarget = CameraPosition + CameraDirection;
 

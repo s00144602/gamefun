@@ -18,6 +18,10 @@ namespace GameEngineProgramming.GameObjects
         private string asset;
         private string start;
         public List<FloorTile> FloorTiles;
+        public Axe Axe;
+        public Sword Sword;
+        
+
         //public List<Enemy> Enemies;
         //public MazeExit ExitLocation;
 
@@ -35,11 +39,16 @@ namespace GameEngineProgramming.GameObjects
 
         public override void Initialize()
         {
+            Axe = new Axe("Axe", Manager.Owner.Location,"Axe", this);
+            Manager.Owner.Scene.pool.Add(Axe);
+            Sword = new Sword("Sword", Manager.Owner.Location, "Sword", this);
+            Manager.Owner.Scene.pool.Add(Sword);
+
             Dictionary<string, Vector3> Animations = new Dictionary<string, Vector3>();
-            Animations.Add("Walk", new Vector3(1, 119, 0));
+            Animations.Add("Walk", new Vector3(2, 59, 0));
             //Animations.Add("Jump", new Vector2(100, 180));
-            Animations.Add("Hit", new Vector3(200, 260, 1));
-            Animations.Add("Idle", new Vector3(0, 0, 0));
+            Animations.Add("Hit", new Vector3(70, 100, 1));
+            Animations.Add("Idle", new Vector3(2, 2, 0));
             Manager.AddComponent(new FixedCamera("cam", Direction));
             //Manager.AddComponent(new BasicEffectModel(ID + "Jim", asset));
             //Manager.AddComponent(new BasicEffectModel(ID + "hWall", "HorizHedge"));

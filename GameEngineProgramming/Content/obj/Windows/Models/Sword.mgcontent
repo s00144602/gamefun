@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Animated Models/Test.fbx</SourceFile>
-  <SourceTime>2016-02-03T14:49:10.6670429+00:00</SourceTime>
-  <DestFile>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/bin/Windows/Animated Models/Test.xnb</DestFile>
-  <DestTime>2016-02-03T14:49:19.0692026+00:00</DestTime>
+  <SourceFile>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/Sword.fbx</SourceFile>
+  <SourceTime>2016-02-03T15:11:25.9520014+00:00</SourceTime>
+  <DestFile>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/bin/Windows/Models/Sword.xnb</DestFile>
+  <DestTime>2016-02-03T15:11:30.6714733+00:00</DestTime>
   <Importer>FbxImporter</Importer>
   <ImporterTime>2015-04-29T18:14:44+01:00</ImporterTime>
-  <Processor>SkinnedModelProcessor</Processor>
+  <Processor>BasicModelProcessor</Processor>
   <ProcessorTime>2016-02-02T12:42:46.981428+00:00</ProcessorTime>
-  <Parameters>
-    <Key>DefaultEffect</Key>
-    <Value>SkinnedEffect</Value>
-  </Parameters>
   <Parameters>
     <Key>ColorKeyColor</Key>
     <Value>0,0,0,0</Value>
@@ -19,6 +15,10 @@
   <Parameters>
     <Key>ColorKeyEnabled</Key>
     <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>DefaultEffect</Key>
+    <Value>BasicEffect</Value>
   </Parameters>
   <Parameters>
     <Key>GenerateMipmaps</Key>
@@ -65,6 +65,8 @@
     <Value>DxtCompressed</Value>
   </Parameters>
   <Dependencies />
-  <BuildAsset />
+  <BuildAsset>
+    <string>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/bin/Windows/Textures/Sword_0.xnb</string>
+  </BuildAsset>
   <BuildOutput />
 </PipelineBuildEvent>

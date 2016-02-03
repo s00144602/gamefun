@@ -25,7 +25,7 @@ namespace GameEngineProgramming.Engine.Components.Input
         FloorTile DetectedFloorTile;
         SpriteFont font;
         SpriteBatch batch = new SpriteBatch(GameUtilities.GraphicsDevice);
-
+        
         public PlayerMovementController(string id)
             : base(id)
         {
@@ -332,7 +332,10 @@ namespace GameEngineProgramming.Engine.Components.Input
 
             }
             #endregion
-
+            if (InputEngine.IsMouseLeftClick())
+            {
+                Manager.Owner.CurrentAnimation = "Hit";
+            }
             if (InputEngine.IsKeyHeld(Keys.P))
             {
                 CurMouseState = Mouse.GetState();
@@ -343,6 +346,10 @@ namespace GameEngineProgramming.Engine.Components.Input
             if (InputEngine.IsKeyHeld(Keys.Down))
                 Manager.Owner.World *= Matrix.CreateTranslation(new Vector3(0, -MovementSpeed, 0));
 
+            if (InputEngine.IsKeyHeld(Keys.Q))
+                Manager.Owner.Weapon = "Axe";
+            if (InputEngine.IsKeyHeld(Keys.E))
+                Manager.Owner.Weapon = "Sword";
 
 
             Mouse.SetPosition(CentredMouse.X, CentredMouse.Y);

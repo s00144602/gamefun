@@ -254,3 +254,5 @@ C:\Users\s00144602\Desktop\Game Engine Starter\3D Game Enigne Progamming\GameEng
 C:\Users\s00144602\Desktop\Game Engine Starter\3D Game Enigne Progamming\GameEngineProgramming\GameEngineProgramming\bin\Windows\Debug\Content\Models\PlayerTex.xnb
 C:\Users\s00144602\Desktop\Game Engine Starter\3D Game Enigne Progamming\GameEngineProgramming\GameEngineProgramming\bin\Windows\Debug\Content\Models\PlayerTex_0.xnb
 C:\Users\s00144602\Desktop\Game Engine Starter\3D Game Enigne Progamming\GameEngineProgramming\GameEngineProgramming\bin\Windows\Debug\Content\Animated Models\Test.xnb
+C:\Users\s00144602\Desktop\Game Engine Starter\3D Game Enigne Progamming\GameEngineProgramming\GameEngineProgramming\bin\Windows\Debug\Content\Models\Sword.xnb
+C:\Users\s00144602\Desktop\Game Engine Starter\3D Game Enigne Progamming\GameEngineProgramming\GameEngineProgramming\bin\Windows\Debug\Content\Textures\Sword_0.xnb

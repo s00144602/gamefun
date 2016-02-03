@@ -13,13 +13,13 @@ using System.Text;
 
 namespace GameEngineProgramming.MazeObjects
 {
-    public class Axe : GameObject
+    public class Sword : GameObject
     {
         private string asset;
         private string start;
         public MazePlayer Player;
-         
-        public Axe(string id, Vector3 location, string asset, MazePlayer player) : base(id, location)
+
+        public Sword(string id, Vector3 location, string asset, MazePlayer player) : base(id, location)
         {
             this.asset = asset;
             Player = player;
@@ -27,7 +27,7 @@ namespace GameEngineProgramming.MazeObjects
         public override void Initialize()
         {
             Manager.AddComponent(new BasicEffectModel(ID + "amodel", asset));
-            Manager.AddComponent(new HeldItemController(asset, Player, false));
+            Manager.AddComponent(new HeldItemController("Sword", Player,true));
             Manager.AddComponent(new FixedCamera("cam", Direction));
 
             base.Initialize();
