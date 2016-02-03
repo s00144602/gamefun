@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/hedge_07.jpg</SourceFile>
+  <SourceTime>2015-11-30T18:52:40.0522472+00:00</SourceTime>
+  <DestFile>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/bin/Windows/Models/hedge_07_1.xnb</DestFile>
+  <DestTime>2015-12-17T22:13:57.7414798+00:00</DestTime>
+  <Importer>TextureImporter</Importer>
+  <ImporterTime>2015-04-29T18:14:44+01:00</ImporterTime>
+  <Processor>TextureProcessor</Processor>
+  <ProcessorTime>2015-04-29T18:14:44+01:00</ProcessorTime>
+  <Parameters>
+    <Key>ColorKeyColor</Key>
+    <Value>0,0,0,0</Value>
+  </Parameters>
+  <Parameters>
+    <Key>ColorKeyEnabled</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>GenerateMipmaps</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Color</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D14F805F-1489-488B-9B3F-1C4418C76383}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameEngineProgramming</RootNamespace>
+    <AssemblyName>GameEngineProgramming</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <MonoGameContentBuilderExe>
+    </MonoGameContentBuilderExe>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Engine\Base\ComponentManager.cs" />
+    <Compile Include="Engine\Base\GameEngine.cs" />
+    <Compile Include="Engine\Base\Scene.cs" />
+    <Compile Include="Engine\Base\ScriptComponent.cs" />
+    <Compile Include="Engine\Components\Cameras\FixedCamera2.cs" />
+    <Compile Include="Engine\Components\Cameras\FixedCamera.cs" />
+    <Compile Include="Engine\Components\Graphics\BasicAnimatedModel.cs" />
+    <Compile Include="Engine\Components\Graphics\BillboardSpriteFont.cs" />
+    <Compile Include="Engine\Components\Graphics\SimpleSprite.cs" />
+    <Compile Include="Engine\Components\Graphics\SkinnedEffectModel.cs" />
+    <Compile Include="Engine\Components\Input\ObjectSelectionHandler.cs" />
+    <Compile Include="Engine\Components\Input\PlayerMovementController.cs" />
+    <Compile Include="Engine\Base\PhysicsComponent.cs" />
+    <Compile Include="Engine\Components\Input\RayCaster.cs" />
+    <Compile Include="Engine\Components\Physics\BoxComponent.cs" />
+    <Compile Include="Engine\Components\Physics\CapsuleComponent.cs" />
+    <Compile Include="Engine\Components\Physics\ConeComponent.cs" />
+    <Compile Include="Engine\Components\Physics\CylinderComponent.cs" />
+    <Compile Include="Engine\Components\Physics\SphereComponent.cs" />
+    <Compile Include="Engine\Components\Physics\StaticMeshComponent.cs" />
+    <Compile Include="Engine\DebugEngine.cs" />
+    <Compile Include="Engine\Engines\CameraEngine.cs" />
+    <Compile Include="Engine\Engines\FrameRateCounter.cs" />
+    <Compile Include="Engine\Engines\InputEngine.cs" />
+    <Compile Include="Engine\Base\GameObject.cs" />
+    <Compile Include="Engine\GameUtilities.cs" />
+    <Compile Include="Engine\Base\AudioComponent.cs" />
+    <Compile Include="Engine\Base\CameraComponent.cs" />
+    <Compile Include="Engine\Base\Component.cs" />
+    <Compile Include="Engine\Base\RenderComponent.cs" />
+    <Compile Include="Engine\Components\Graphics\BasicEffectModel.cs" />
+    <Compile Include="Engine\MathConverter.cs" />
+    <Compile Include="Engine\ModelDataExtractor.cs" />
+    <Compile Include="Engine\PhysicsEngine.cs" />
+    <Compile Include="GameObjects\AnimatedModelObject.cs" />
+    <Compile Include="GameObjects\BasicAnimatedObject.cs" />
+    <Compile Include="GameObjects\BasicModelObject.cs" />
+    <Compile Include="GameObjects\HeldItemController.cs" />
+    <Compile Include="GameObjects\MazePlayer.cs" />
+    <Compile Include="GameObjects\StaticModelObject.cs" />
+    <Compile Include="Manager\Owner.cs" />
+    <Compile Include="MazeObjects\Axe.cs" />
+    <Compile Include="MazeObjects\FloorTile.cs" />
+    <Compile Include="MazeObjects\HorizWall.cs" />
+    <Compile Include="MazeObjects\MiniMap.cs" />
+    <Compile Include="MazeObjects\Pillar.cs" />
+    <Compile Include="MazeObjects\VertWall.cs" />
+    <Compile Include="MazeObjects\Wall.cs" />
+    <Compile Include="Scenes\MazeScene.cs" />
+    <Compile Include="GameStart.cs" />
+    <Compile Include="InputEngine.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BEPUik">
+      <HintPath>..\External Dependencies\BEPUik.dll</HintPath>
+    </Reference>
+    <Reference Include="BEPUphysics">
+      <HintPath>..\External Dependencies\BEPUphysics.dll</HintPath>
+    </Reference>
+    <Reference Include="BEPUutilities">
+      <HintPath>..\External Dependencies\BEPUutilities.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4f02099a-1058-4c77-9d9d-058ede829e04}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PipelineExtensions\PipelineExtensions.csproj">
+      <Project>{44983729-8faf-4f1c-91b1-54e92087ce4c}</Project>
+      <Name>PipelineExtensions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

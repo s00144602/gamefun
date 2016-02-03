@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>HiDef</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/debug.spritefont</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/bigFont.spritefont</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/FloorTile.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/hedge_07.jpg</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/HedgePillar.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/HorizHedge.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/HorizWall.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/HorizWallReplace.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/Pillar.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/SnowPath.jpg</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/VertHedge.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/VertWall.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/VertWallReplace.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Textures/MiniMapRevealed.png</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Animated Models/MazePlayer.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Animated Models/RoundyTex.png</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Animated Models/TestModel.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/AxeTex.png</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/Axe.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Animated Models/NewTest.fbx</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Models/PlayerTex.png</File>
+    <File>C:/Users/s00144602/Desktop/Game Engine Starter/3D Game Enigne Progamming/GameEngineProgramming/GameEngineProgramming/Content/Animated Models/Test.fbx</File>
+  </SourceFiles>
+</SourceFileCollection>
